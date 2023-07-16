@@ -1,0 +1,237 @@
+<style>
+@import url('https:/fr/fonts.googleapis.com/css2?family=Dosis:wght@200&family=Tapestry&display=swap');
+</style>
+*{
+	margin: 15;
+	padding: 0;
+}
+
+html,body{
+background-color: transparent;
+font-family: poppins;
+font-size: 16px;
+margin: 0;
+margin-bottom: 100px;
+overflow-x:hidden;
+}
+
+
+
+/*----------navigation bar---------*/
+.logo
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+/*-----------website name-----------*/
+.logo div
+{
+   
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Tapestry', cursive;
+    font-weight: 1000;
+    font-size: 170%;
+ background-color: transperant;
+  background: black;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+    align-items: right;
+    margin-top: -60px;
+   margin-left: 700px;
+}
+
+.navbar a {
+  float: none;
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  justify-content: space-between;
+    display: inline-flex;
+font-weight: 400%;
+margin-right: 2px;
+color: black;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+font-size: 20px; 
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #FFD700;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  margin-left: 700px;
+  box-shadow: 0px 8px 16px rgba(0,0,0);
+  z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: white;
+  display: block;
+  text-align: left;
+  font-size: 100%;
+  background-color: white;
+}
+
+.column a:hover {
+  background-color: white;
+  font-size: 130%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.slider-box{
+	width: 90%;
+	height: 90vh;
+	margin: 30px auto;
+	position: absolute;
+}
+#slider{
+	width: 100%;
+	display: inline-flex;
+	transition: 0.7s;
+	top: -7%;
+	position:absolute;
+}
+#slider img{
+	width: 100%;
+	padding: 52px;
+}
+.indicators{
+	position: absolute;
+	left: 50%;
+	bottom: 90px;
+	transform: translateX(-50%);
+}
+.indicators span{
+   margin: 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+.active{
+	background: #fff !important;
+}
+
+
+.footer-wrapper{
+
+width: 1100px;
+margin: 27;
+}
+.single-footer{
+width: 33%;
+float: left;
+text-align: left;
+color: #fff;
+
+}
+.single-footer ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.single-footer ul a{
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 12px;
+margin: 15;
+}
+.single-footer p{
+width: 70%;
+}
+
+.single-icons{
+width: 33%;
+float: right;
+text-align: center;
+color: #fff;
+margin: -155;
+
+}
+.single-icons ul{
+margin: 15;
+padding: 0;
+list-style: none;
+}
+.single-icons ul a{
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 30px;
+margin: 0;
+padding: 5;
+
+}
+
+footer{
+width: 100%;
+height: 250px;
+position: absolute;
+bottom: -450;
+z-index: 1;
+background-color: #262626;
+}

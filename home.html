@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/718c95403e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <div class="logo">
+            <div>
+			<a >JewelBells</a>             
+            </div>
+            
+        </div>
+   
+<div class="navbar">
+  <a href="home.html"><i class="fas fa-house-user"></i>&nbsp;Home</a>
+ 
+  
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fab fa-shopify"></i>&nbsp;Shop      
+    </button>
+
+    <div class="dropdown-content">
+      
+      <div class="row">
+        <div class="column">
+          <a href="necklace.html">Trending Necklaces</a>
+          <a href="earings.html">Earings</a>
+          <a href="rings.html">Rings</a>
+          <a href="mangalsutras.html">Mangalsutras</a>
+        </div>
+        <div class="column">
+          <a href="pendants.html">Pendants</a>
+          <a href="nosepins.html">Nose Pins</a>
+          <a href="goldchainc.html">Gold Chains</a>
+          <a href="bangles.html">Bangles</a>
+        </div>
+        
+      </div>
+
+    </div>
+</div>
+  
+   <a href="about_us.html"><i class="fas fa-users"></i>&nbsp;About Us</a>
+    <a href="contact.html"><i class="fas fa-phone-square"></i>&nbsp;Contact Us</a>
+     <a href="feedback.html"><i class="fas fa-comment-alt"></i>&nbsp;Feedback</a>
+</div>
+</div>
+<p style="background-image: url('bg.jpg');">
+
+<div class="slider-box">
+		<div id="slider">
+			<img src="pics/slider3.jpg" height="700" width="600">
+			<img src="pics/slider1.jpg" height="700" width="600">
+			<img src="pics/slider6.jpg" height="700" width="600">
+   		</div>
+		<div class="indicators">
+			<span id="btn1" class="active"></span>
+			<span id="btn2"></span>
+			<span id="btn3"></span>
+      </div>
+   </div>
+<script>
+	var slide = document.getElementById("slider");
+	var btn1 = document.getElementById("btn1");
+	var btn2 = document.getElementById("btn2");
+	var btn3 = document.getElementById("btn3");
+	
+	btn1.onclick = function(){
+		slide.style.transform = "translateX(0px)";
+		 btn1.classList.add("active");
+		 btn2.classList.remove("active");
+		 btn3.classList.remove("active");
+		 
+
+	}
+	btn2.onclick = function(){
+		slide.style.transform = "translateX(-100%)";
+		 btn2.classList.add("active");
+		 btn1.classList.remove("active");
+		 btn3.classList.remove("active");
+		 
+	}
+	btn3.onclick = function(){
+		slide.style.transform = "translateX(-200%)";
+		 btn3.classList.add("active");
+		 btn2.classList.remove("active");
+		 btn1.classList.remove("active");
+	}
+	
+</script>
+</p>
+
+<footer>
+<div class="footer-wrapper">
+<div class="single-footer">
+<h2>About Us</h2>
+
+<p>Welcome to JewelBells, your number one source for all types of women jewellery, 
+ie: necklaces, rings, bangles.... </p>
+</div>
+<div class="single-footer">
+<h2>Navigation</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</div>
+<div class="single-footer">
+<h2>Get Help</h2>
+<ul>
+<li><a href="#">Order Status</a></li>
+<li><a href="#">Delivery</a></li>
+<li><a href="#">Refunds</a></li>
+<li><a href="#">Payment Options</a></li>
+<li><a href="#">Terms</a></li>
+</ul>
+</div>
+<div class="single-icons">
+<h2>Follow Us</h2>
+<ul>
+<li><a href="#"><i class="fab fa-facebook" style="color:#4267B2;"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter" style="color:#00acee;"></i></a></li>
+<li><a href="#"><i class="fab fa-whatsapp" style="color:#128C7E;"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram" style="color:#C13584;"></i></a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

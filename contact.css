@@ -1,0 +1,344 @@
+<style>
+@import url('https:/fr/fonts.googleapis.com/css2?family=Dosis:wght@200&family=Tapestry&display=swap');
+</style>
+*{
+	margin: 15;
+	padding: 0;
+}
+
+html,body{
+background-color: white;
+font-family: poppins;
+font-size: 16px;
+margin: 0;
+margin-bottom: 100px;
+overflow-x:hidden;
+}
+
+
+
+/*----------navigation bar---------*/
+.logo
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+/*-----------website name-----------*/
+.logo div
+{
+   
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Tapestry', cursive;
+    font-weight: 1000;
+    font-size: 170%;
+ background-color: transperant;
+  background: black;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+    align-items: right;
+    margin-top: -60px;
+   margin-left: 700px;
+}
+
+.navbar a {
+  float: none;
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  justify-content: space-between;
+    display: inline-flex;
+font-weight: 400%;
+margin-right: 2px;
+color: black;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+font-size: 20px; 
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #FFD700;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  margin-left: 700px;
+  box-shadow: 0px 8px 16px rgba(0,0,0);
+  z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: white;
+  display: block;
+  text-align: left;
+  font-size: 100%;
+  background-color: white;
+}
+
+.column a:hover {
+  background-color: white;
+  font-size: 130%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------contact us form code --------------------*/
+
+.contactin
+{
+  
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.contactin .content
+{
+  max-width: 800px;
+  text-align: center;
+
+}
+.contactin .content h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: #17202A#17202A ;
+}
+.contactin .content p
+{
+  font-size: 26px;
+  color: #17202A;
+}
+.container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo
+{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+  margin-right: 20%;
+}
+.container .contactInfo .box
+{
+   position: relative;
+   padding :20px 0;
+   display: flex;
+   
+}
+.container .contactInfo .box .icon
+{
+   min-width: 60px;
+   height: 60px;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 22px;
+}
+.container .contactInfo .box .icon .text1
+{
+   display: flex;
+   margin-left: 20px;
+   font-size: 16px;
+   color: #fff;
+   flex-direction: row;
+   font-weight: 300;
+
+}
+.container .contactInfo .box .icon .text1 h3
+{
+   font-weight: 700;
+   color: #fff;
+
+}
+.contactForm
+{
+   width: 30%;
+   padding: 40px;
+   background: #fff;
+}
+.contactForm h2
+{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+}
+.contactForm .inputBox
+{
+   position: relative;
+   width: 100%;
+   margin-top: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+   resize: none;
+}
+.contactForm .inputBox span
+{
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+   color: #e91e63;
+   font-size: 12px;
+   transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+   width: 100px;
+   background: orange;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   font-size: 18px;
+}
+
+
+
+
+.footer-wrapper{
+
+width: 1100px;
+margin: 10;
+}
+.single-footer{
+width: 33%;
+float: left;
+text-align: left;
+color: #fff;
+
+}
+.single-footer ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.single-footer ul a{
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 12px;
+margin: 15;
+}
+.single-footer p{
+width: 70%;
+}
+
+.single-icons{
+width: 33%;
+float: right;
+text-align: center;
+color: #fff;
+margin: -155;
+
+}
+.single-icons ul{
+margin: 15;
+padding: 0;
+list-style: none;
+}
+.single-icons ul a{
+text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 30px;
+margin: 0;
+padding: 5;
+
+}
+
+footer{
+width: 100%;
+height: 250px;
+position: absolute;
+bottom: -412;
+z-index: 1;
+background-color: #262626;
+}
